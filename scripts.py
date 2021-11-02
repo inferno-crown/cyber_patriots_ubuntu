@@ -13,7 +13,7 @@ for i in media:
 import os
 purge = []
 install = []ls
-os.system("sudo apt-get install --assume-yes rkhunter ssh ufw firefox iptables")
+os.system("sudo apt-get install --assume-yes rkhunter ssh ufw firefox iptables Gufw")
 os.system("sudo sudo ufw enable")
 os.system("apt-get purge --assume-yes netcat nmap zemap john johntheripper hydra nmap matasploit")
 
