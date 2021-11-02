@@ -11,13 +11,19 @@ for i in media:
 
 #install and remove packages
 import os
-purge = []
-install = []ls
-os.system("sudo apt-get install --assume-yes rkhunter ssh ufw firefox iptables Gufw")
+purge = ["netcat","nmap","zemap","john","johntheripper","hydra","metasploit"]
+install = ["rkhunter", "ssh", "ufw", "firefox", "iptables", "Gufw", "lightdm", "bum"]
+for i in install:
+        os.system("sudo apt-get install --assume-yes "+i)
+#install lippam cracklib
+os.system("sudo apt-get install -y libpam-cracklib")
 os.system("sudo sudo ufw enable")
-os.system("apt-get purge --assume-yes netcat nmap zemap john johntheripper hydra nmap matasploit")
+for i in purge:
+        os.system("apt-get purge --assume-yes "+i)
+
 
 
 #update packages
 import os
+os.system("sudo apt-get update -y")
 os.system("sudo apt-get update")
