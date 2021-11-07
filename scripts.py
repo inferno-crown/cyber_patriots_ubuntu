@@ -26,4 +26,4 @@ for i in purge:
 #update packages
 import os
 os.system("sudo apt-get update -y")
-os.system("sudo apt-get update")
+os.system("sudo apt-get update && sudo apt-get upgrade")
