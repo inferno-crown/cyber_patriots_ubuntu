@@ -18,7 +18,7 @@ if finished.lower() == 'y':
         #install lippam cracklib
         os.system("sudo apt-get update -y")
         os.system("sudo apt-get install -y libpam-cracklib")
-        os.system("sudo sudo ufw enable")
+        os.system("sudo ufw enable")
         for i in purge:
                 os.system("apt-get purge --assume-yes "+i)
 
