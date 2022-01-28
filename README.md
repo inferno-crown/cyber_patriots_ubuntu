@@ -2,9 +2,9 @@
 
 
 **update apt**
-'''
+```
 os.system("sudo apt-get update && sudo apt-get upgrade")
-'''
+```
 
 **delete media files**
 ```
@@ -30,6 +30,6 @@ for i in purge:
 ```
 
 **show what's running on the computer**
-'''
+```
 os.system("ps aux > running.txt")
-'''
+```
