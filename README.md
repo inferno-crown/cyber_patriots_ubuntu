@@ -11,13 +11,13 @@ os.system("sudo apt-get update && sudo apt-get upgrade")
 import os
 media = ["'*.mp3'","'*.mp4'","'*.wav'"]
 for i in media:
-  os.system("sudo find $dir -name " +i+ " -delete")
+  os.system("sudo find / -name " +i+ " -delete")
 ```
 **install and remove packages**
 ```
 os.system("sudo apt-get update && sudo apt-get upgrade")
 purge = ["netcat","nmap","zemap","john","johntheripper","hydra","metasploit"]
-install = ["rkhunter", "ssh", "ufw", "firefox", "iptables", "Gufw", "lightdm", "bum"]
+install = ["ssh", "ufw", "firefox", "iptables", "Gufw"]
 for i in install:
   os.system("sudo apt-get install --assume-yes "+i)
 
@@ -26,7 +26,7 @@ os.system("sudo apt-get install -y libpam-cracklib")
 os.system("sudo ufw enable")
 
 for i in purge:
-  os.system("apt-get purge --assume-yes "+i)
+  os.system("sudo apt-get purge --assume-yes "+i)
 ```
 
 **show what's running on the computer**
